@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: black;
+    padding: 15px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 14px;
+}
+
+.btn,
+.btn-primary {
+    background: linear-gradient(to right, purple, pink);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    color: white;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.btn:hover,
+.btn-primary:hover,
+button:hover,
+a:hover {
+    opacity: 0.9;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero h1 {
+    font-size: 54px;
+    line-height: 1.1;
+}
+
+.hero span {
+    color: purple;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: lightgray;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image img {
+    width: 380px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+.skills h2,
+.portfolio h2,
+.pricing h2,
+.reviews h2,
+.contact h2 {
+    margin-bottom: 25px;
+}
+
+.about-box {
+    background: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.bar {
+    background: gray;
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(to right, skyblue, pink);
+}
+
+.features,
+.grid,
+.pricing-grid,
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card,
+.project,
+.review {
+    background: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+.plan {
+    background: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 35px;
+    text-align: center;
+}
+
+.plan h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.featured {
+    border-color: pink;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    max-width: 600px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: black;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    background: linear-gradient(to right, purple, pink);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: gray;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
